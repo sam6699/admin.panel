@@ -34,3 +34,5 @@ Route::group(['middleware'=>['status','auth']],function(){
 
 
 });
+
+Route::get('user/index','Blog\User\MainController@index');

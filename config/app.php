@@ -177,6 +177,7 @@ return [
 
         /** My providers */
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Eusonlito\LaravelMeta\MetaServiceProvider::class
 
     ],
 
@@ -228,7 +229,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Meta' => Eusonlito\LaravelMeta\Facade::class
     ],
 
 ];
