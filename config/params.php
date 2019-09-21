@@ -1,7 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Samm
- * Date: 15.09.2019
- * Time: 12:39
- */
+
+return [
+  'admin_email'=>'admin@admin.com',
+    'shop_name'=>'Laravel shop',
+    'pagination'=>3,
+    'smtp_host'=>'smtp.com.net',
+    'smtp_port'=>'2525',
+    'smtp_protocol'=>'ssl',
+    'smtp_login'=>'laravel@laravel.com',
+    'smtp_password'=>'12345678'
+
+];

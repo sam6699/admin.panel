@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "eusonlito/laravel-meta": "^3.1",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0"
@@ -17,6 +18,7 @@
         "barryvdh/laravel-ide-helper": "^2.6",
         "facade/ignition": "^1.4",
         "fzaninotto/faker": "^1.4",
+        "laravel/ui": "^1.0",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
         "phpunit/phpunit": "^8.0"
@@ -41,6 +43,15 @@
         ]
     },
     "autoload-dev": {
+        "files": [
+            "config/init.php",
+            "config/params.php"
+        ],
+        "classmap": [
+            "database/seeds",
+            "database/factories",
+            "app/SBlog/Core"
+        ],
         "psr-4": {
             "Tests\\": "tests/"
         }
