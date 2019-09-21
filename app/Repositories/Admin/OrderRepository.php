@@ -50,7 +50,6 @@ class OrderRepository extends CoreRepository
         return $order;
 
     }
-
     public function getOneOrder($id){
         $order = $this->startConditions()::withTrashed()
             ->select('orders.*','users.name',
@@ -115,5 +114,4 @@ class OrderRepository extends CoreRepository
         $result =$item->update();
         return $result;
     }
-
 }

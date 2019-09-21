@@ -22,6 +22,7 @@
 
     {{--<link rel="stylesheet" href="{{asset('css/my.css')}}">--}}
 
+
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
@@ -112,6 +113,7 @@
                 <li><a href="/"><i class="fa fa-home"></i> <span>В магазин</span></a></li>
                 <li><a href="{{route('blog.admin.index.index')}}"><i class="fa fa-user"></i> <span>Главная админки</span></a></li>
                 <li><a href="{{route('blog/admin.orders.index')}}"><i class="fa fa-shopping-cart"></i> <span>Заказы</span></a></li>
+
 
 
 
@@ -231,7 +233,6 @@
 <script src="{{asset('adminlte/dist/js/adminlte.min.js')}}"></script>
 
 <script src="{{asset('js/my.js')}}"></script>
-<!-- === = ===  -->
 
 </body>
 </html>
