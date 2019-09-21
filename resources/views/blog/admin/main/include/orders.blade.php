@@ -53,7 +53,8 @@
     </div>
     <br>
     <div class="box-footer clearfix">
-        <a href="" class="btn btn-sm btn-info btn-flat pull-left">Все заказы</a>
+        <a href="{{route('blog/admin.orders.index')}}" class="btn btn-sm btn-info btn-flat pull-left">Все заказы</a>
+
     </div>
 
 

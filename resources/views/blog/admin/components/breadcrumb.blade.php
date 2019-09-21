@@ -3,9 +3,11 @@
 </h1>
 
 <ol class="breadcrumb">
+
     <li><a href="{{route('blog.admin.index.index')}}"><i class="fa fa-dashboard"></i>{{$parent}}</a></li>
     @if(isset($order))
         <li><a href=""><i></i>{{$order}}</a></li>
+
     @endif
     @if(isset($categoty))
         <li><a href=""><i></i>{{$category}}</a></li>
@@ -25,5 +27,7 @@
     @if(isset($currency))
         <li><a href=""><i></i>{{$currency}}</a></li>
     @endif
+    @if(isset($active))
     <li><i class="active"></i>{{$active}}</li>
+    @endif
 </ol>

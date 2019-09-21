@@ -20,7 +20,8 @@
                  <div class="icon">
                      <i class="ion ion-bag"></i>
                  </div>
-                 <a href="" class="small-box-footer">Подробнее
+                 <a href="{{route('blog/admin.orders.index')}}" class="small-box-footer">Подробнее
+
                     <i class="fa fa-arrow-circle-o-right"></i>
                  </a>
              </div>
