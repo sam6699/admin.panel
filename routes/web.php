@@ -28,16 +28,25 @@ Route::group(['middleware'=>['status','auth']],function(){
 
     Route::group($groupData,function (){
        Route::resource('index','MainController')->names('blog.admin.index');
-        Route::resource('orders','OrderController')
+
+
+
+       Route::resource('orders','OrderController')
             ->names('blog/admin.orders');
-
-
-    Route::get('/orders/change/{id}','OrderController@change')
+        Route::get('/orders/change/{id}','OrderController@change')
         ->name('blog/admin.orders.change');
-    Route::post('/orders/save/{id}','OrderController@save')
+        Route::post('/orders/save/{id}','OrderController@save')
         ->name('blog.admin.orders.save');
-    Route::get('/orders/forcedestroy/{id}','OrderController@forcedestroy')
+        Route::get('/orders/forcedestroy/{id}','OrderController@forcedestroy')
         ->name('blog.admin.orders.forcedestroy');
+
+        Route::resource('categories','CategoryController')
+            ->names('blog.admin.categories');
+        Route::get('categories.mydel','CategoryController@mydel')
+            ->name('blog.admin.categories.mydel');
+
+
+
     });
 });
 

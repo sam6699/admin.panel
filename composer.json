@@ -12,7 +12,8 @@
         "eusonlito/laravel-meta": "^3.1",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.0",
-        "laravel/tinker": "^1.0"
+        "laravel/tinker": "^1.0",
+        "lavary/laravel-menu": "^1.7"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.6",
