@@ -45,9 +45,12 @@ Route::group(['middleware'=>['status','auth']],function(){
         Route::get('categories.mydel','CategoryController@mydel')
             ->name('blog.admin.categories.mydel');
 
-
-
-    });
+        Route::resource('users','UserController')
+            ->names('blog.admin.users');
+        });
 });
 
 Route::get('user/index','Blog\User\MainController@index');
+
+
+
